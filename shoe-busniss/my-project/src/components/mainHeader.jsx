@@ -11,8 +11,6 @@ import './mainHeader.css'
 
 function mainHeader() {
 
-    
-
     return (
         <div className="main-header">
             <div className="left-section">

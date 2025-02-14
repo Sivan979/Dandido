@@ -10,6 +10,10 @@ function ProductDetails(){
 
     const product = brand.product.find((p) => p.id === productId);
 
+    if (!product) {
+        return <h2 style={{ textAlign: "center", marginTop: "4rem" }}>Product not found!</h2>;
+    }
+
     return(
         <div className= {styles.pageContainer}>
             <div className= {styles.productContainer}> 
