@@ -4,7 +4,6 @@
     justify-content: center;
     justify-items: center;
 }
-
 .productContainer{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.545);
     border: none;
@@ -13,7 +12,6 @@
     grid-template-columns: 500px 1fr;
 }
 .imgContainer{
-    
     overflow: hidden;
 }
 .img{
@@ -39,16 +37,24 @@
 }
 .info p{
     font: 600 18px roboto,arial;
+    margin: 0 0 4px 0;
+    color: rgb(77, 77, 77);
 }
 .originalPrice span{
     text-decoration:line-through;
-    color: rgb(103, 103, 103);
+    color: rgb(56, 56, 56);
+}
+.discountPrice span{
+    color: rgb(30, 30, 30);
+}
+.colors span{
+    color: rgb(30, 30, 30);
 }
 .availability span{
-    color: rgb(8, 159, 8);
+    color: rgb(0, 179, 0);
 }
 .discountPercent{
-    margin: 0;
+    margin: 20px 0 0 0;
     font:600 25px roboto,arial;
     color: rgb(164, 0, 0);
 }
