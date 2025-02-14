@@ -1,6 +1,7 @@
 import styles from "./productDetails.module.css";
 import { brandData } from "../components/brandData";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+
 
 
 function ProductDetails(){
@@ -24,7 +25,11 @@ function ProductDetails(){
                         <p className= {styles.availability}>Availability: <span>In Stock</span></p>
                     </div>
                     <p className= {styles.discountPercent}>{product.discountprocent}% off</p>
-
+                    <div className= {styles.btnContainer}> 
+                        <Link to= {`/brand/${brandName}`}>
+                            <button className= {styles.backBtn}>Back</button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
