@@ -65,6 +65,8 @@
 }
 .btnContainer{
     display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 .backBtn{
     background-color: rgb(167, 0, 0);
@@ -74,6 +76,5 @@
     font: 500 20px roboto,arial;
     padding: 6px 12px;
     letter-spacing: 1px;
-    cursor: pointer;
-    float: right;
+    cursor: pointer;    
 }

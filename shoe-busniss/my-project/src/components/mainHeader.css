@@ -15,13 +15,15 @@ body{
 .left-section{
     width: 220px;
 }
-.left-section a{
+.link{
+    text-decoration: none;
+}
+.mainheader-name{
     margin: 0px 0px 0px 50px;
-    padding-top: 15px;
     font: 600 40px roboto,arial;
     letter-spacing: 1px;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: none;    
     color: black;
 }
 .middle-section{

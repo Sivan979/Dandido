@@ -2,6 +2,7 @@ import AccountIcon from '../assets/icons/account.png'
 import ShoppingCartIcon from '../assets/icons/shopping-cart.png'
 import HartIcon from '../assets/icons/heart-icon.png'
 import SearchIcon from '../assets/icons/search-icon.png'
+import { Link } from "react-router-dom";
 
 
 //css
@@ -14,7 +15,9 @@ function mainHeader() {
     return (
         <div className="main-header">
             <div className="left-section">
-                <a href="main.html">DanDido</a>
+                <Link className='link' to={"/home"}>
+                    <p className='mainheader-name'>DanDido</p>
+                </Link>
             </div>
             <div className="middle-section">
                 <input type="text" placeholder="Search" />
