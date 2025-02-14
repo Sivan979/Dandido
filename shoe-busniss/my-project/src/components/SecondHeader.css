@@ -1,0 +1,77 @@
+.second-header{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: fixed;
+    top: 75px;
+    height: 60px;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(246, 244, 244);
+}
+.dropdown{
+    position: relative;
+}
+.main-menu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-top: 20px;
+    position: relative;
+    margin: 0;
+}
+.main-item{
+    position: relative;
+    display: inline;
+    list-style-type: none;
+    font: 18px roboto, arial;
+}
+.main-item a{
+    text-decoration: none;
+    color: black;
+}
+.main-item::after {
+    content: ''; /* Empty content to create the underline */
+    position: absolute;
+    width: 0; /* Initially no underline */
+    height: 2px; /* Thickness of the underline */
+    bottom: -4px; /* Align underline to the bottom */
+    left: 0;
+    background-color: black; /* Color of the underline */
+    transition: width 0.2s ease; /* Animation when hovering */
+}
+.main-item:hover::after {
+    width: 100%; /* Full width underline on hover */
+}
+
+
+.dropdown-second-menu{
+    background-color: rgb(246, 244, 244);
+    position: absolute;
+    right: 0%;
+    transform: translatex(150px);
+    height: 60px;
+    display: none;
+    align-items: center;
+    top: 100%;
+}
+.second-menu{
+    display: flex;
+    gap: 30px;
+    padding: 0px 25px;
+    margin: 0px;
+}
+.second-item{
+    list-style-type: none;
+}
+.second-item a{
+    font:500 18px roboto,arial;
+    text-decoration: none;
+    color: rgb(108, 107, 107);
+}
+.second-item a:hover{
+    color: black;
+}
+.main-item:hover .dropdown-second-menu{
+    display: flex;
+}
