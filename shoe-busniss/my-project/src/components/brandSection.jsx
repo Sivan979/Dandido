@@ -15,7 +15,7 @@ function BrandSection(){
                     </div>
 
                     <div className="quick-buy">
-                        {grid.product.map((product) => (
+                        {grid.product.slice(0, 5).map((product) => (
                             <a className="shoe-link" href=""><img className="quick-buy-shoes-img" src={product.img} alt="" /> <button className="shop-now-btn">Shop Now</button></a>
                         ))}
                         <div className="see-more-container">

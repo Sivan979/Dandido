@@ -23,10 +23,7 @@ function Brand(){
         <div>
             <MainHeader/>
             <SecondHeader/>
-            {/* Pass the brand data down as a prop to BrandPage,
-            so BrandPage doesn’t have to do the param check again. */
-            }
-            <BrandPage brand={brand}/>
+            <BrandPage/>
             <Footer/>
         </div>
     )
