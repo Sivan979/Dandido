@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 
 //css
-import './mainHeader.css'
+import '../styles/mainHeader.css'
 
 
 

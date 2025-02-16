@@ -1,4 +1,4 @@
-import styles from "./productDetails.module.css";
+import styles from "../styles/productDetails.module.css";
 import { brandData } from "../components/brandData";
 import { Link, useParams } from "react-router-dom";
 

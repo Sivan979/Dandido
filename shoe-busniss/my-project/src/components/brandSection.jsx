@@ -1,6 +1,6 @@
 import { brandData } from "./brandData.jsx";
 //css
-import "./brandSection.css";
+import "../styles/brandSection.css";
 
 
 function BrandSection(){

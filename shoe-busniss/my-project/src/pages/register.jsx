@@ -1,4 +1,4 @@
-import Styles from "./register.module.css";
+import Styles from "../styles/register.module.css";
 
 
 function Register(){

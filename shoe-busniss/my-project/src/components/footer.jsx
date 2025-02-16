@@ -1,4 +1,4 @@
-import "./footer.css"
+import "../styles/footer.css";
 import FacebookIcon from "../assets/icons/facebook-icon.png"
 import InstgramIcon from "../assets/icons/instagram-icon.png"
 import TwitterIcon from "../assets/icons/twitter-icon.png"

@@ -2,7 +2,7 @@
 import Filtericon from '../assets/icons/filter-icon.png';
 import SortbyIcon from '../assets/icons/sortby.png';
 //css
-import styles from "./brandpage.module.css";
+import styles from "../styles/brandpage.module.css";
 
 import { Link, useParams } from "react-router-dom";
 import { brandData } from './brandData';
