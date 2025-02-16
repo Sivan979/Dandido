@@ -39,8 +39,10 @@ import vimage7 from "../assets/vainsShoes/vans7.webp";
 import vimage8 from "../assets/vainsShoes/vans8webp.webp";
 
 
-export const brandData = {
-    nike: {
+export const brandData = [
+    {
+        section: "NIKE",
+        mainImg: nikeMainIMG,
         amount: 9,
         product: [
             {id:"01", name:"Nike Dunk Low", img: nikeMainIMG, url:"", discountprocent: 10, originalprice: 110, discountprice: 95},
@@ -54,7 +56,9 @@ export const brandData = {
             {id:"09", name:"Nike Dunk Low", img: nimage8, url:"", discountprocent: 20, originalprice: 140, discountprice: 125},
         ]
     },
-    adidas: {
+    {
+        section: "ADIDAS",
+        mainImg: aimage3,
         amount: 7,
         product: [
             {id:"01", name: "Adidas Low", img: aimage1, url:"", discountprocent: 10, originalprice: 100, discountprice: 90},
@@ -66,7 +70,9 @@ export const brandData = {
             {id:"07", name: "Adidas O Melly", img: aimage7, url:"", discountprocent: 30, originalprice: 125, discountprice: 95},
         ]
     },
-    puma: {
+    {
+        section: "PUMA",
+        mainImg: pimage1,
         amount: 7,
         product: [
             {id:"01", name: "Puma PAO31", img: pimage1, url:"", discountprocent: 40, originalprice: 135, discountprice: 80},
@@ -78,7 +84,9 @@ export const brandData = {
             {id:"07", name: "Puma PAO2", img: pimage7, url:"", discountprocent: 30, originalprice: 125, discountprice: 95},
         ]
     },
-    vains: {
+    {
+        section: "VAINS",
+        mainImg: vimage8,
         amount: 8,
         product: [
             {id:"01", name: "vains FI9", img: vimage1, url:"", discountprocent: 40, originalprice: 135, discountprice: 80},
@@ -91,4 +99,4 @@ export const brandData = {
             {id:"08", name: "vains XM4", img: vimage8, url:"", discountprocent: 30, originalprice: 125, discountprice: 95},
         ]
     }
-}
+]
