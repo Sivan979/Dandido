@@ -9,7 +9,9 @@ import { brandData } from './brandData';
 
 function BrandPage(){
     const { brandName } = useParams();
-    const brand = brandData[brandName.toLowerCase()]; 
+    const brand = brandData.find(
+        (item) => item.section.toLowerCase() === brandName.toLowerCase()
+    );
 
     return(
 

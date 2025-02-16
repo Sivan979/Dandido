@@ -6,8 +6,9 @@ import { Link, useParams } from "react-router-dom";
 
 function ProductDetails(){
     const { brandName, productId } = useParams();
-    const brand = brandData[brandName.toLowerCase()];
-
+    const brand = brandData.find(
+        (item) => item.section.toLowerCase() === brandName.toLowerCase()
+    );
     const product = brand.product.find((p) => p.id === productId);
 
     if (!product) {

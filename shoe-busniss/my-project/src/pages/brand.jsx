@@ -11,8 +11,10 @@ import NotFound from "../pages/notfound.jsx";
 
 function Brand(){
     const { brandName } = useParams();
-    const brand = brandData[brandName?.toLowerCase()];
-
+    const brand = brandData.find(
+        (item) => item.section.toLowerCase() === brandName.toLowerCase()
+    );
+    
     if (!brand) {
         return <NotFound />;
     }
