@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Router>
-      <ScrollToTop />
+        <ScrollToTop />
         <Routes>
           <Route index element = {<Home />} />
           <Route path = '/home' element = {<Home />} />

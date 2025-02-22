@@ -42,6 +42,7 @@ import vimage8 from "../assets/vainsShoes/vans8webp.webp";
 export const brandData = [
     {
         section: "NIKE",
+        sectionUrl: "/brand/nike",
         mainImg: nikeMainIMG,
         amount: 9,
         product: [
@@ -58,6 +59,7 @@ export const brandData = [
     },
     {
         section: "ADIDAS",
+        sectionUrl: "/brand/adidas",
         mainImg: aimage3,
         amount: 7,
         product: [
@@ -72,6 +74,7 @@ export const brandData = [
     },
     {
         section: "PUMA",
+        sectionUrl: "/brand/puma",
         mainImg: pimage1,
         amount: 7,
         product: [
@@ -86,6 +89,7 @@ export const brandData = [
     },
     {
         section: "VAINS",
+        sectionUrl: "/brand/vains",
         mainImg: vimage8,
         amount: 8,
         product: [

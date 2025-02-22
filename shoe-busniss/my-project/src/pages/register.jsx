@@ -1,5 +1,5 @@
 import Styles from "../styles/register.module.css";
-
+import { Link } from "react-router-dom";
 
 function Register(){
 
@@ -7,7 +7,7 @@ function Register(){
             
         <div className={Styles.container}>
             <div className={Styles.info}>
-                <a href="">DanDido</a>
+                <Link className= {Styles.brandName} to= '/home'>DanDido</Link>
                 <div className={Styles.narrowIcon}>&#8623;</div>
                 <h2>Join Us</h2>
                 <p>Join us for more information and access to our website. If you would like to know more about us please click on About us button.</p>

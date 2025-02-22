@@ -1,4 +1,5 @@
 import { brandData } from "./brandData.jsx";
+import { Link } from "react-router-dom";
 //css
 import "../styles/brandSection.css";
 
@@ -19,7 +20,7 @@ function BrandSection(){
                             <a className="shoe-link" href=""><img className="quick-buy-shoes-img" src={product.img} alt="" /> <button className="shop-now-btn">Shop Now</button></a>
                         ))}
                         <div className="see-more-container">
-                            <a className="see-more" href="">MORE</a>
+                            <Link to={grid.sectionUrl} className="see-more" >MORE</Link>
                         </div>
                     </div>
                 </div>

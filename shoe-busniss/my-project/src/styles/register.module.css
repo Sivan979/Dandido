@@ -12,7 +12,7 @@
     padding: 30px;
     display: block;
 }
-.info a{
+.brandName{
     text-decoration: none;
     color: black;
     font:600 40px roboto,arial;
@@ -32,6 +32,7 @@
     font: 600 14px arial;
     padding: 10px 15px;
     transition: background-color 0.15s;
+    text-decoration: none;
 }
 .info .btn:hover{
     background-color: #ebebeb;
