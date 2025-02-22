@@ -4,11 +4,13 @@ import Registration from './pages/register.jsx';
 import Brand from './pages/brand.jsx';
 import NotFound from './pages/notfound.jsx';
 import ProductDetails from './pages/productDetails.jsx';
+import ScrollToTop from './components/scrolltotop.jsx';
 
 function App() {
   return (
     <div>
       <Router>
+      <ScrollToTop />
         <Routes>
           <Route index element = {<Home />} />
           <Route path = '/home' element = {<Home />} />
