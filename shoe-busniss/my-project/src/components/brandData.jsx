@@ -44,6 +44,7 @@ export const brandData = [
         section: "NIKE",
         sectionUrl: "/brand/nike",
         mainImg: nikeMainIMG,
+        mainImgUrl: "/brand/nike/01",
         amount: 9,
         product: [
             {id:"01", name:"Nike Dunk Low", img: nikeMainIMG, url:"", discountprocent: 10, originalprice: 110, discountprice: 95},
@@ -61,6 +62,7 @@ export const brandData = [
         section: "ADIDAS",
         sectionUrl: "/brand/adidas",
         mainImg: aimage3,
+        mainImgUrl: "/brand/adidas/03",
         amount: 7,
         product: [
             {id:"01", name: "Adidas Low", img: aimage1, url:"", discountprocent: 10, originalprice: 100, discountprice: 90},
@@ -76,6 +78,7 @@ export const brandData = [
         section: "PUMA",
         sectionUrl: "/brand/puma",
         mainImg: pimage1,
+        mainImgUrl: "/brand/puma/01",
         amount: 7,
         product: [
             {id:"01", name: "Puma PAO31", img: pimage1, url:"", discountprocent: 40, originalprice: 135, discountprice: 80},
@@ -91,6 +94,7 @@ export const brandData = [
         section: "VAINS",
         sectionUrl: "/brand/vains",
         mainImg: vimage8,
+        mainImgUrl: "/brand/vains/08",
         amount: 8,
         product: [
             {id:"01", name: "vains FI9", img: vimage1, url:"", discountprocent: 40, originalprice: 135, discountprice: 80},

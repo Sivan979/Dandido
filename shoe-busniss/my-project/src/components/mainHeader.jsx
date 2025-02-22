@@ -15,7 +15,7 @@ function mainHeader() {
     return (
         <div className="main-header">
             <div className="left-section">
-                <Link className='link' to={"/home"}>
+                <Link className='link' to={"/home"} onClick={() => {window.scrollTo(0, 0);}}>
                     <p className='mainheader-name'>DanDido</p>
                 </Link>
             </div>

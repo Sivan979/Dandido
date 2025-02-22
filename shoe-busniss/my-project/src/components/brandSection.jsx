@@ -10,14 +10,18 @@ function BrandSection(){
             {brandData.map((grid) => (
                 <div className="grid">
                     <p className="brand-name">{grid.section}</p>
-                    <img className="main-page-img" src={grid.mainImg} alt="" />
+                    <Link to={grid.mainImgUrl}>
+                        <img className="main-page-img" src={grid.mainImg} alt="main IMG" />
+                    </Link>
                     <div className="caption">
                         <h1>BEST SELLERS</h1>
                     </div>
 
                     <div className="quick-buy">
                         {grid.product.slice(0, 5).map((product) => (
-                            <a className="shoe-link" href=""><img className="quick-buy-shoes-img" src={product.img} alt="" /> <button className="shop-now-btn">Shop Now</button></a>
+                            <Link to={`${grid.sectionUrl}/${product.id}`} className="shoe-link">
+                                <img className="quick-buy-shoes-img" src={product.img} alt="" /> <button className="shop-now-btn">Shop Now</button>
+                            </Link>
                         ))}
                         <div className="see-more-container">
                             <Link to={grid.sectionUrl} className="see-more" >MORE</Link>

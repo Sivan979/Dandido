@@ -46,7 +46,7 @@
 .quick-buy-shoes-img{
     max-height: 300px;
     width: 100%;
-    height: 100%; /* Ensure the height fills the container */
+    height: 100%;
     object-fit:cover;
     object-position: center;
 }
