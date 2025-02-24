@@ -59,3 +59,67 @@
 .terms a:hover{
     color: rgb(0, 0, 0);
 }
+
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .terms{
+        gap: 10px;
+        padding: 40px 10px 10px 30px;
+    }
+    .terms a{
+        font:500 15px roboto,arial;
+    }
+    .terms p{
+        font-size: 17px;
+    } 
+}
+
+@media (max-width: 768px) {
+    .upper-section{
+        grid-template-columns: 1fr 1fr;
+    }
+    .column li a{
+        font: 15px roboto,arial;
+    }
+    .terms{
+        display: grid;
+        gap: 10px;
+        padding: 40px 10px 10px 30px;
+    }
+    .terms a{
+        font:500 15px roboto,arial;
+    }
+    .terms p{
+        font-size: 17px;
+    } 
+}
+
+
+@media (max-width: 480px){
+    .upper-section{
+        grid-template-columns: 1fr 1fr;
+    }
+    .column li a{
+        font: 12px roboto,arial;
+    }
+    .terms{
+        display: grid;
+        gap: 10px;
+        padding: 40px 10px 10px 30px;
+    }
+    .terms a{
+        font:500 12px roboto,arial;
+    }
+    .terms p{
+        font-size: 14px;
+    }
+    .footer-hr{
+        margin-bottom: 70px;
+        margin-left: 105px;
+        width: 50%;
+    }
+    .topHr{
+        margin: 0px;
+        width: 100%;
+    }
+}
