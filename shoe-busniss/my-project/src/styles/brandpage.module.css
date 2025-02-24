@@ -16,7 +16,7 @@
     border-left-style: none;
 }
 .filterSection h2{
-    padding-left: 30px;
+    padding-left: 3%;
 }
 .filterSection .filterBtn,.sortbyBtn{
     text-decoration: none;
@@ -83,7 +83,6 @@
     scroll-snap-type: x mandatory; /* Enables scroll snapping */
     scroll-behavior:smooth; /* Smooth scrolling */
     gap: 10px; /* Optional: space between images */
-    
 }
 .shoeImage{
     height: 100%;
@@ -150,4 +149,135 @@
     font: 600 16px roboto,arial;
     text-decoration:line-through;
     color: rgb(133, 133, 133);
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .pageGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .imgContainer{
+        height: 280px;
+    }
+    .shoeImage{
+        width: 100%;
+    }
+    .shoeName{
+        font:600 19px roboto,arial ;
+        padding-bottom: 12px;
+    }
+    .infoContainer .off{
+        font:600 21px roboto,arial;
+        padding-left: 70px;
+    }
+    .newPrice{
+        font:600 18px roboto,arial;
+    }
+    .oldPrice{
+        font: 600 16px roboto,arial;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .filterSection h2{
+        padding-left: 3%;
+        font-size: 16px;
+    }
+    .sortbyBtnContainer{
+        margin-right: 14px;
+    }
+    .filterBtn{
+        padding-right: 6px;
+    }
+    .filterSection .filterBtn,.sortbyBtn{
+        font:500 14px roboto, arial;
+    }
+    .filterSortbyContianer{
+        gap: 7px;
+    }
+    .filterBtnContainer img{
+        height: 13px;
+        padding-top: 2px;
+    }
+    .filterBtnContainer, .sortbyBtnContainer{
+        padding: 1px;
+    }
+
+    .pageGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .imgContainer{
+        height: 260px;
+    }
+    .shoeImage{
+        width: 100%;
+    }
+    .shoeName{
+        font:600 17px roboto,arial ;
+        padding-bottom: 12px;
+    }
+    .infoContainer .off{
+        font:600 18px roboto,arial;
+        padding-left: 45px;
+    }
+    .newPrice{
+        font:600 15px roboto,arial;
+    }
+    .oldPrice{
+        font: 600 14px roboto,arial;
+    }
+}
+
+@media (max-width: 480px) {
+    .filterSection h2{
+        padding-left: 3%;
+        font-size: 12px;
+    }
+    .sortbyBtnContainer{
+        margin-right: 14px;
+    }
+    .filterBtn{
+        padding-right: 5px;
+    }
+    .filterSection .filterBtn,.sortbyBtn{
+        font:500 11px roboto, arial;
+    }
+    .filterSortbyContianer{
+        gap: 7px;
+    }
+    .filterBtnContainer img{
+        height: 10px;
+        padding-top: 2px;
+    }
+    .filterBtnContainer, .sortbyBtnContainer{
+        padding: 0px;
+    }
+
+
+    .pageGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .imgContainer{
+        height: 180px;
+    }
+    .shoeImage{
+        width: 100%;
+    }
+    .shoeName{
+        font:600 14px roboto,arial ;
+        padding-bottom: 12px;
+    }
+    .infoContainer .off{
+        font:600 15px roboto,arial;
+        padding-left: 45px;
+    }
+    .newPrice{
+        font:600 12px roboto,arial;
+    }
+    .oldPrice{
+        font: 600 11px roboto,arial;
+    }
 }
