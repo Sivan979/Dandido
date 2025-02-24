@@ -24,9 +24,9 @@ function mainHeader() {
                 <button ><img src={SearchIcon} alt="Search" /></button>
             </div>
             <div className="right-section">
-                <Link to={'/registration'}><a href = ""><img src= {AccountIcon} alt="account" /></a></Link>
-                <a href="#"><img src={ShoppingCartIcon} alt="Shopping-cart"/></a>
-                <a href="#"><img src={HartIcon} alt="Favorates" /></a>
+                <Link className='link-icons' to={'/registration'}><img src= {AccountIcon} alt="account" /></Link>
+                <Link className='link-icons'><img src={ShoppingCartIcon} alt="Shopping-cart"/></Link>
+                <Link className='link-icons'><img src={HartIcon} alt="Favorates" /></Link>
             </div>
         </div>
     );

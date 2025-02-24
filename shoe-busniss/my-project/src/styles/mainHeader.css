@@ -1,6 +1,3 @@
-body{
-    padding: 0px;
-}
 .main-header{
     display: flex;
     align-items: center;
@@ -13,19 +10,21 @@ body{
     padding-top: 10px;
 }
 .left-section{
-    width: 220px;
+    width: 18%;
 }
 .link{
     text-decoration: none;
 }
 .mainheader-name{
-    margin: 0px 0px 0px 50px;
-    font: 600 40px roboto,arial;
+    margin: 0px 0px 0px 21%;
+    font: 600 2.5rem roboto,arial;
     letter-spacing: 1px;
     cursor: pointer;
     text-decoration: none;    
     color: black;
 }
+
+
 .middle-section{
     display: flex;
     justify-content: center;
@@ -35,7 +34,7 @@ body{
 .middle-section input{
     padding-left: 15px;
     font: 17px roboto,arial;
-    width: 450PX;
+    width: 58%;
     height: 30px;
     border-radius: 15px;
     border: 1px solid rgba(0, 0, 0, 0.402);
@@ -52,9 +51,9 @@ body{
     font-family: roboto,arial;
 }
 .middle-section button{
-    margin-left: -44px;
+    margin-left: -5.6%;
     height: 33px;
-    width: 45px;
+    width: 6%;
     border-width: 1px;
     border-style: solid;
     border-radius: 20px;
@@ -66,26 +65,100 @@ body{
 }
 .middle-section img{
     padding-top: 2px;
-    height: 20px;
+    height: 70%;
 }
+
+
 .right-section{
     display: flex;
     justify-content: center; /* Align items horizontally */
     align-items: center;
-    gap: 8px;
-    width:250px;
+    gap: 3%;
+    width: 20%;
 }
-.right-section a{
+.right-section .link-icons{
     display: flex;
     border: none;
-    border-radius: 30px;
-    height: 35px;
-    width: 36px;
+    border-radius: 50%;
+    height: 2.2rem;
+    width: 14.3%;
     background-color: rgb(240, 240, 240);
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 .right-section img{
-    height: 20px;
+    height: 57%;
+}
+
+@media(max-width: 480px){
+    .mainheader-name{
+        font-size: 1.3rem;
+        letter-spacing: 0px;
+    }
+    .right-section .link-icons{
+        height: 1.5rem;
+        width: 28%;
+    }
+    .middle-section input{
+        height: 16px;
+        padding-left: 10px;
+    }
+    .middle-section ::placeholder{
+        font-size: 13px;
+        font-family: roboto,arial;
+    }
+    .middle-section button{
+        height: 20px;
+        width: 9%;
+        margin-left: -7%;
+    }
+}
+
+@media(max-width: 768px){
+    .mainheader-name{
+        font-size: 1.6rem;
+        letter-spacing: 0px;
+    }
+    .right-section .link-icons{
+        height: 1.9rem;
+        width: 28%;
+    }
+    .middle-section input{
+        height: 20px;
+        padding-left: 10px;
+    }
+    .middle-section ::placeholder{
+        font-size: 14px;
+        font-family: roboto,arial;
+    }
+    .middle-section button{
+        height: 24px;
+        width: 9%;
+        margin-left: -7%;
+    }
+}
+
+@media(max-width: 1024px) and (min-width: 769px){
+    .mainheader-name{
+        font-size: 1.9rem;
+        letter-spacing: 0.5px;
+    }
+    .right-section .link-icons{
+        height: 2.3rem;
+        width: 25%;
+    }
+    .middle-section input{
+        height: 24px;
+        padding-left: 10px;
+    }
+    .middle-section ::placeholder{
+        font-size: 16px;
+        font-family: roboto,arial;
+    }
+    .middle-section button{
+        height: 28px;
+        width: 7%;
+        margin-left: -7%;
+    }
 }
