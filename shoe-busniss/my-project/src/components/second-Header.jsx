@@ -40,7 +40,7 @@ function DropdownMenu() {
             <ul className="main-menu">
                 {menuItems.map((item) => (
                     <li className="main-item" key={item.title}>
-                        <a href="">{item.title}</a>
+                        <Link className='main-item-name'>{item.title}</Link>
                         <div className="dropdown-second-menu">
                             <ul className="second-menu">
                                 {item.links.map(link => (
