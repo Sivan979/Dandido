@@ -99,3 +99,12 @@
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.724);
 
 }
+
+@media (max-width: 480px) {
+    .brand-name{
+        font: 600 21px roboto,arial;
+    } 
+    .caption h1{
+        font-size: 20px;
+    }
+}
