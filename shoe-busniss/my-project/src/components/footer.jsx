@@ -136,11 +136,11 @@ function Footer(){
             <hr className="topHr"/>
             <div className="upper-section">
                 {footerContent.map((content) => (
-                    <div className={content.class}>
+                    <div className={content.class} key={content.section}>
                         <h3>{content.section}</h3>
                         <ul>
                             {content.links.map((item) => (
-                                <li><a href={item.url}>{item.name}</a></li>
+                                <li key={item.name}><a href={item.url}>{item.name}</a></li>
                             ))}
                         </ul>
                     </div>
@@ -148,7 +148,7 @@ function Footer(){
                 <div className="follow-us">
                     <h3>Follow Us</h3>
                     {socialLinks.map((img) => (
-                        <a className="follow-icons" href={img.url}><img className="follow-icons-img" src={img.imgSrc} alt={img.alt} /></a>
+                        <a key={img.alt} className="follow-icons" href={img.url}><img className="follow-icons-img" src={img.imgSrc} alt={img.alt} /></a>
                     ))}
                 </div>
 
@@ -157,7 +157,7 @@ function Footer(){
             <div className="terms">
                 <p><strong>&copy;DanDido, Inc.</strong></p>
                 {termsContent.map((content) => (
-                    <a href={content.url}>{content.name}</a>
+                    <a key={content.name} href={content.url}>{content.name}</a>
                 ))}
             </div>
             <hr className="footer-hr" />
