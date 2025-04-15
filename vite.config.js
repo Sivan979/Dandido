@@ -1,17 +1,8 @@
-import { defineConfig } from "vite"
-import react from "@vitejs/plugin-react"
-import { resolve } from "path"
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+// ✅ base must be exact repository name with slashes
 export default defineConfig({
-  base: "/Dandido/",
+  base: '/Dandido/',
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, "index.html"),
-        // catch-all for React Router
-        "404": resolve(__dirname, "index.html")
-      }
-    }
-  }
 })
