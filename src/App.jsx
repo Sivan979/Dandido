@@ -9,7 +9,7 @@ import ScrollToTop from './components/scrolltotop.jsx';
 function App() {
   return (
     <div>
-      <Router>
+      <Router basename="/Dandido">
         <ScrollToTop />
         <Routes>
           <Route index element = {<Home />} />
